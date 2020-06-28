@@ -25,7 +25,7 @@ query = (
 """
 )
 json = { 'query' : query}
-api_token = os.environ['GITSTATS-TOKEN']
+api_token = os.environ['GITSTATS_TOKEN']
 headers = {'Authorization': 'token %s' % api_token}
 
 r = requests.post(url=url, json=json, headers=headers)
